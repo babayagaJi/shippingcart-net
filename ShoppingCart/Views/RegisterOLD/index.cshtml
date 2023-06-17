@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+
+<form action="action_page.php" class="form_container_wrapper register_form">
+    <div class="form_container">
+        <hr>
+
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+        <hr>
+
+        <button type="submit" class="submitBtn">Register</button>
+    </div>
+
+    <div class="signin">
+        <p>Already have an account? @Html.ActionLink("Login", "Index", "Login", new { area = "" }, new { @class = "redired-link" })</p>
+    </div>
+</form>

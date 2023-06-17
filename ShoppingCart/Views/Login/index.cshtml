@@ -18,6 +18,8 @@
         <button type="submit" class="submitBtn">Login</button>
     </div>
     <div class="signin">
-        <p>Not have an account? <a asp-area="" asp-controller="Register" asp-action="">Register</a>.</p>
+        <p>
+            Not have an account?  @Html.ActionLink("Register", "Index", "Register", new { area = "" }, new { @class = "redirect-link" })
+        </p>
     </div>
 </form>
